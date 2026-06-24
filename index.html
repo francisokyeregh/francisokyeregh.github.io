@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis Okyere | Academic Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #24292f;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 1px solid #d0d7de;
+      background: #f6f8fa;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav .name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #0969da;
+      text-decoration: none;
+    }
+
+    nav .links a {
+      margin-left: 18px;
+      color: #24292f;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav .links a:hover {
+      color: #0969da;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+    }
+
+    .sidebar {
+      border-right: 1px solid #d0d7de;
+      padding-right: 28px;
+    }
+
+    .profile-img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #d0d7de;
+      background: #f6f8fa;
+    }
+
+    .sidebar h2 {
+      margin: 18px 0 4px;
+      font-size: 24px;
+    }
+
+    .subtitle {
+      color: #57606a;
+      margin-bottom: 16px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: #0969da;
+      text-decoration: none;
+    }
+
+    main section {
+      margin-bottom: 36px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 0 0 16px;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 48px auto 24px;
+      padding: 20px 24px;
+      border-top: 1px solid #d0d7de;
+      color: #57606a;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #d0d7de;
+        padding-right: 0;
+        padding-bottom: 24px;
+      }
+
+      nav .links a {
+        margin-left: 0;
+        margin-right: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="name" href="#">Francis Okyere</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar" id="contact">
+      <img class="profile-img" src="profile.jpg" alt="Francis Okyere" />
+      <h2>Francis Okyere</h2>
+      <p class="subtitle">Graduate Teaching Assistant<br />Department of Statistics<br />Florida State University</p>
+
+      <div class="contact">
+        <p>📍 Tallahassee, Florida</p>
+        <p>✉️ <a href="mailto:kokyere.gh@gmail.com">kokyere.gh@gmail.com</a></p>
+        <p>🌐 <a href="#">Google Scholar</a></p>
+        <p>🔗 <a href="#">ResearchGate</a></p>
+        <p>💻 <a href="#">GitHub</a></p>
+      </div>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h1>About me</h1>
+        <p>
+          I am a graduate student and teaching assistant in Statistics at Florida State University. My academic interests are in high-dimensional statistics, regularization methods, statistical learning, and interpretable machine learning.
+        </p>
+        <p>
+          My research focuses on regularization, inference, and stability in high-dimensional statistical models, with applications to risk prediction, education data, biomedical data, and public health.
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research interests</h2>
+        <ul>
+          <li>High-dimensional statistical modeling</li>
+          <li>Regularization methods: ridge, lasso, and elastic net</li>
+          <li>Post-selection inference and uncertainty quantification</li>
+          <li>Feature stability and interpretability</li>
+          <li>Applications in biomedical, education, and public health data</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Selected projects</h2>
+        <ul>
+          <li><span class="item-title">Feature Stability and Interpretability in Penalized Logistic Regression</span><br />Application to breast cancer diagnosis.</li>
+          <li><span class="item-title">Regularized Logistic Regression for Student Academic Outcomes</span><br />Comparing ridge, lasso, and elastic-net models for educational risk prediction.</li>
+          <li><span class="item-title">Feature Stability in Predicting HDL Cholesterol</span><br />An NHANES-based application using regularized regression and bootstrap stability.</li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching and mentoring</h2>
+        <ul>
+          <li>Graduate Teaching Assistant, Florida State University</li>
+          <li>Teaching interests: introductory statistics, applied statistics, regression, and statistical computing</li>
+          <li>Course support: STA 2122 Introduction to Applied Statistics and STA 2171 Statistics for Biology</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><span class="item-title">Ph.D. in Mathematical Statistics</span>, Florida State University — in progress</li>
+          <li><span class="item-title">M.S. in Statistics</span>, Florida State University</li>
+          <li><span class="item-title">B.S. / Previous degree</span>, Institution Name</li>
+        </ul>
+      </section>
+
+      <section id="honors">
+        <h2>Honors and service</h2>
+        <ul>
+          <li>Reviewer and contributor to educational research and statistics-related projects</li>
+          <li>K–12 data visualization poster judge</li>
+          <li>Graduate teaching and academic mentoring service</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 Francis Okyere. Last updated May 2026.
+  </footer>
+</body>
+</html>
