@@ -1,38 +1,118 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae | Francis Okyere</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-```
-<!-- Your existing stylesheet -->
-<link rel="stylesheet" href="style.css">
-```
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            color: #24292f;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 1px solid #d0d7de;
+            background: #f6f8fa;
+            padding: 14px 24px;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .name {
+            font-weight: 700;
+            font-size: 18px;
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        nav .links a {
+            margin-left: 18px;
+            text-decoration: none;
+            color: #24292f;
+        }
+
+        nav .links a:hover,
+        nav .links a.active {
+            color: #0969da;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        h1 {
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 35px;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        ul,
+        ol {
+            margin-top: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 50px auto 20px;
+            padding-top: 15px;
+            border-top: 1px solid #d0d7de;
+            color: #57606a;
+            font-size: 14px;
+        }
+
+        a {
+            color: #0969da;
+        }
+    </style>
 
 </head>
 
 <body>
 
 <header>
-    <div class="container">
-        <a href="index.html" class="site-title">Francis Okyere</a>
 
-```
     <nav>
-        <a href="index.html">Home</a>
-        <a href="publications.html">Publications</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
+
+        <a class="name" href="index.html">Francis Okyere</a>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="cv.html" class="active">CV</a>
+        </div>
+
     </nav>
-</div>
-```
 
 </header>
 
-<main class="container">
+<div class="container">
 
 <h1>Curriculum Vitae</h1>
 
@@ -41,18 +121,15 @@ A downloadable PDF version of my curriculum vitae is available
 <a href="Francis_Okyere_CV.pdf" target="_blank">here</a>.
 </p>
 
-<hr>
-
 <h2>Professional Profile</h2>
 
 <p>
-I am a Ph.D. student in Statistics at Florida State University. My research focuses on high-dimensional statistics,
-statistical learning, penalized regression, variable selection, bootstrap stability selection,
-and interpretable machine learning. I am interested in developing statistically rigorous methods
-for predictive modeling with applications in healthcare, education, sports analytics, and public policy.
+I am a Ph.D. student in Statistics at Florida State University with research interests in
+high-dimensional statistics, statistical learning, penalized regression,
+variable selection, bootstrap stability selection, and interpretable machine learning.
+My research develops statistically rigorous and interpretable predictive models with
+applications in healthcare, education, sports analytics, and public policy.
 </p>
-
-<hr>
 
 <h2>Education</h2>
 
@@ -74,142 +151,102 @@ for predictive modeling with applications in healthcare, education, sports analy
 <strong>Bachelor of Science (B.Sc.) in Statistics</strong>
 </p>
 
-<hr>
-
 <h2>Research Interests</h2>
 
 <ul>
-    <li>High-Dimensional Statistics</li>
-    <li>Statistical Learning</li>
-    <li>Penalized Regression</li>
-    <li>Variable Selection</li>
-    <li>Statistical Inference</li>
-    <li>Bootstrap Methods</li>
-    <li>Interpretable Machine Learning</li>
-    <li>Biostatistics</li>
-    <li>Sports Analytics</li>
+<li>High-Dimensional Statistics</li>
+<li>Statistical Learning</li>
+<li>Penalized Regression</li>
+<li>Variable Selection</li>
+<li>Statistical Inference</li>
+<li>Bootstrap Stability Selection</li>
+<li>Interpretable Machine Learning</li>
+<li>Biostatistics</li>
+<li>Sports Analytics</li>
 </ul>
-
-<hr>
 
 <h2>Current Research</h2>
 
 <ul>
-    <li>High-dimensional statistical inference</li>
-    <li>Penalized logistic regression</li>
-    <li>Bootstrap stability selection</li>
-    <li>Sparse discriminant analysis</li>
-    <li>Explainable machine learning</li>
-    <li>Statistical learning for healthcare and education</li>
+<li>High-dimensional statistical inference</li>
+<li>Penalized logistic regression</li>
+<li>Bootstrap stability selection</li>
+<li>Sparse discriminant analysis</li>
+<li>Explainable machine learning</li>
+<li>Predictive modeling in healthcare and education</li>
 </ul>
-
-<hr>
 
 <h2>Selected Publications</h2>
 
 <ol>
-    <li>
-        Okyere, F., &amp; Sherif, M. (2026).
-        Simulation-Enhanced Regression Analysis of Attendance and Prior Achievement as Predictors of Student Academic Outcomes.
-        <em>Florida Journal of Educational Research.</em>
-    </li>
 
-```
 <li>
-    Okyere, F., Mahama, F., Yemidi, S., &amp; Krampa, E. K. (2015).
-    Econometric Modeling of Inflation in Ghana.
-    <em>IOSR Journal of Economics and Finance.</em>
+Simulation-Enhanced Regression Analysis of Attendance and Prior Achievement as Predictors of Student Academic Outcomes.
+<em>Florida Journal of Educational Research</em>, 2026.
 </li>
 
 <li>
-    Okyere, F., &amp; Kyei, L. (2014).
-    Multiplicative SARIMA Modeling of Ordinance Marriages.
-    <em>International Journal of Modern Mathematical Sciences.</em>
+Econometric Modeling of Inflation in Ghana.
+<em>IOSR Journal of Economics and Finance</em>, 2015.
 </li>
 
 <li>
-    Okyere, F., &amp; Kyei, L. (2014).
-    Temporal Modeling of Producer Price Inflation.
-    <em>IOSR Journal of Mathematics.</em>
+Multiplicative SARIMA Modeling of Ordinance Marriages.
+<em>International Journal of Modern Mathematical Sciences</em>, 2014.
 </li>
-```
+
+<li>
+Temporal Modeling of Producer Price Inflation.
+<em>IOSR Journal of Mathematics</em>, 2014.
+</li>
 
 </ol>
 
 <p>
-See my <a href="publications.html">Publications</a> page for a complete list.
+See the <a href="publications.html">Publications</a> page for a complete list.
 </p>
-
-<hr>
 
 <h2>Teaching Experience</h2>
 
-<h3>Florida State University</h3>
+<p><strong>Florida State University</strong></p>
 
 <ul>
-    <li>STA 2122 – Introduction to Applied Statistics (Fall 2026)</li>
-    <li>STA 2171 – Statistics for Biology (Spring 2026)</li>
-    <li>STA 2023 – Fundamental Business Statistics (Fall 2024, Spring 2025, Fall 2025)</li>
-</ul>
 
-<hr>
+<li>STA 2122 – Introduction to Applied Statistics (Fall 2026)</li>
+
+<li>STA 2171 – Statistics for Biology (Spring 2026)</li>
+
+<li>STA 2023 – Fundamental Business Statistics (Fall 2024, Spring 2025, Fall 2025)</li>
+
+</ul>
 
 <h2>Technical Skills</h2>
 
-<h3>Programming</h3>
+<p><strong>Programming:</strong> R, Python, SAS, SQL, MATLAB</p>
 
-<ul>
-    <li>R</li>
-    <li>Python</li>
-    <li>SAS</li>
-    <li>SQL</li>
-    <li>MATLAB</li>
-</ul>
+<p><strong>Statistical Computing:</strong> glmnet, caret, tidymodels, randomForest, survival, ggplot2, Quarto</p>
 
-<h3>Statistical Computing</h3>
-
-<ul>
-    <li>glmnet</li>
-    <li>caret</li>
-    <li>tidymodels</li>
-    <li>randomForest</li>
-    <li>survival</li>
-    <li>ggplot2</li>
-    <li>Quarto</li>
-</ul>
-
-<h3>Software</h3>
-
-<ul>
-    <li>RStudio</li>
-    <li>Git</li>
-    <li>GitHub</li>
-    <li>LaTeX</li>
-    <li>Microsoft Excel</li>
-</ul>
-
-<hr>
+<p><strong>Software:</strong> Git, GitHub, RStudio, LaTeX, Microsoft Excel</p>
 
 <h2>Professional Membership</h2>
 
 <ul>
-    <li>American Statistical Association (ASA)</li>
+<li>American Statistical Association (ASA)</li>
 </ul>
-
-<hr>
 
 <h2>Honors</h2>
 
 <ul>
-    <li>Graduate Teaching Assistant, Florida State University</li>
-    <li>Master of Science in Statistics, Florida State University</li>
+<li>Graduate Teaching Assistant, Florida State University</li>
+<li>Master of Science in Statistics, Florida State University</li>
 </ul>
 
-</main>
+</div>
 
-<footer class="container">
-    <p>© 2026 Francis Okyere</p>
+<footer>
+© 2026 Francis Okyere
 </footer>
 
 </body>
 </html>
+```
